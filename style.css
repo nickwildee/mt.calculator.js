@@ -1,53 +1,58 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .calculator {
-    background: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    width: 320px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 320px;
 }
 
 .display {
-    background: #2d3436;
-    color: #fff;
-    font-size: 2rem;
-    padding: 20px;
-    text-align: right;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    min-height: 60px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+  background: #2d3436;
+  color: #fff;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: right;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  min-height: 60px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 button {
-    padding: 25px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    background: #f0f0f0;
-    transition: all 0.3s ease;
+  padding: 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
 }
 
 /* CSS-1: 버튼에 호버 효과 추가하기 
@@ -55,47 +60,51 @@ button {
    - background 색상을 #e0e0e0으로 변경
    - transform: scale(1.05) 추가 */
 
-
-
 .operator {
-    background: #ff7675;
-    color: white;
+  background: #ff7675;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #ff6348;
 }
 
 /* CSS-2: 연산자 버튼 호버 효과 추가하기 
    힌트: .operator:hover 선택자 사용
    - background 색상을 #ff6348로 변경 */
 
-
-
 .equals {
-    background: #00b894;
-    color: white;
-    grid-column: span 2;
+  background: #00b894;
+  color: white;
+  grid-column: span 2;
+}
+
+.equals:hover {
+  background-color: #00a884;
 }
 
 /* CSS-3: equals 버튼 호버 효과 추가하기
    힌트: .equals:hover 선택자 사용
    - background 색상을 #00a884로 변경 */
 
-
-
 .clear {
-    background: #fdcb6e;
-    color: white;
+  background: #fdcb6e;
+  color: white;
+}
+
+.clear:hover {
+  background-color: #fcb93c;
 }
 
 /* CSS-4: clear 버튼 호버 효과 추가하기
    힌트: .clear:hover 선택자 사용  
    - background 색상을 #fcb93c로 변경 */
 
-
-
 .zero {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 
 /* 추가 스타일링을 위한 클래스 */
 .pressed {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
